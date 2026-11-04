@@ -1,0 +1,12 @@
+{
+  "name": "legaltech-cleanup-sweep",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --import tsx test/sweep.test.ts",
+    "run": "tsx src/sweep_worker.ts"
+  },
+  "dependencies": { "tsx": "^4.19.2", "typescript": "^5.6.3", "zod": "^3.23.8" },
+  "devDependencies": { "@types/node": "^22.10.2" }
+}
